@@ -3,6 +3,7 @@
   <img src="images/main.png" />
 </p>
 
+---
 ## Functions
 - `GetProxies` : Show in log the list of proxies that are currently in the queue.
 - `GetSingleProxy` : Show in log a single proxy from the queue.
