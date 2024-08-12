@@ -1,5 +1,7 @@
 # ProxySharpTester
 <p align="center">
+  Windows forms application to test [ProxySharp](https://github.com/m-henderson/ProxySharp) ongoing developpement.
+<p align="center">
   <img src="images/main.png" />
 </p>
 
@@ -15,6 +17,6 @@
 - `AddProxy` : Adds the specified proxy to the queue.
 - `PopProxy` : Removes the first proxy in the queue.
 ## Dependencies
-- [ProxySharp](https://github.com/m-henderson/ProxySharp) [based on latest dev branch build]
+- [ProxySharp](https://github.com/m-henderson/ProxySharp) [based on latest dev branch build or master]
 ## Contributor Community
 - [ProxySharp Discord](https://discord.gg/F77g42ZNFa)
