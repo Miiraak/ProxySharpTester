@@ -1,6 +1,6 @@
 # ProxySharpTester
 <p align="center">
-  Windows forms application to test [ProxySharp](https://github.com/m-henderson/ProxySharp) ongoing developpement.
+  Windows forms application to test ProxySharp ongoing developpement.
 <p align="center">
   <img src="images/main.png" />
 </p>
