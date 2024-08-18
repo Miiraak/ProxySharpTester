@@ -42,9 +42,9 @@ namespace ProxySharpTester
 
         private void ButtonRenewFilteredProxies_Click(object sender, EventArgs e)
         {
-            Proxy.RenewFilteredProxies(textBoxCountryCode.Text.ToUpper(), checkBoxRenewFilteredProxies.Checked);
-            textBoxCountryCode.Clear();
-            checkBoxRenewFilteredProxies.Checked = false;
+            Proxy.RenewFilteredProxies(Convert.ToInt32(textBoxRenewFilteredProxiesFilterType.Text), textBoxValue1.Text.ToUpper(), checkBoxRenewFilteredProxiesExclude1.Checked, textBoxValue2.Text.ToUpper(), checkBoxRenewFilteredProxiesExclude2.Checked);
+            textBoxValue1.Clear();
+            checkBoxRenewFilteredProxiesExclude1.Checked = false;
         }
 
         private void ButtonGetIndex_Click(object sender, EventArgs e)
