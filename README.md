@@ -12,7 +12,7 @@
 - `GetSingleRandomProxy` : Show in log a single randomly choosed proxy from the queue.
 - `GetUsedProxies` :  Show in log a list of previously used proxies. The lower the index, the older the proxy.
 - `RenewQueue` : Clears the queue then adds a fresh list of proxies to the queue.
-- `RenewFilteredProxies` : Clears the queue, then adds a fresh, filtered list of proxies based on the specified type filter. Allows filtering by or excluding.
+- `FilterByXXX` : Filter the queue, based on the specified type filter. Allows filtering by or excluding.
 - `GetIndex` : Gets the index of a proxy.
 - `AddProxy` : Adds the specified proxy to the queue.
 - `PopProxy` : Removes the first proxy in the queue.
