@@ -40,13 +40,6 @@ namespace ProxySharpTester
             Proxy.RenewQueue();
         }
 
-        private void ButtonRenewFilteredProxies_Click(object sender, EventArgs e)
-        {
-            Proxy.RenewFilteredProxies(Convert.ToInt32(textBoxRenewFilteredProxiesFilterType.Text), textBoxValue1.Text.ToUpper(), checkBoxRenewFilteredProxiesExclude1.Checked, textBoxValue2.Text.ToUpper(), checkBoxRenewFilteredProxiesExclude2.Checked);
-            textBoxValue1.Clear();
-            checkBoxRenewFilteredProxiesExclude1.Checked = false;
-        }
-
         private void ButtonGetIndex_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"The index of {textBoxGetIndex.Text} is : {Proxy.GetIndex(textBoxGetIndex.Text)}");
@@ -67,6 +60,28 @@ namespace ProxySharpTester
         private void ButtonClearLog_Click(object sender, EventArgs e)
         {
             richTextBoxProxies.Clear();
+        }
+
+        private void buttonFilterCountry_Click(object sender, EventArgs e)
+        {
+            Proxy.FilterQueueByCountry(textBoxCountry.Text, checkBoxCountry.Checked);
+
+        }
+
+        private void buttonFilterPort_Click(object sender, EventArgs e)
+        {
+            Proxy.FilterQueueByPort(textBoxValuePort.Text, checkBoxPort.Checked);
+        }
+
+        private void buttonFilterAnonymity_Click(object sender, EventArgs e)
+        {
+            Proxy.FilterQueueByAnonymityLevel(Convert.ToInt32(textBoxAnonyminty.Text), checkBoxAnonymity.Checked);
+        }
+
+        private void buttonFilterHttps_Click(object sender, EventArgs e)
+        {
+            Proxy.FilterQueueByHttps(checkBoxHttpsIsSupported.Checked, checkBoxHttps.Checked);
+            ButtonGetProxies_Click(sender, e);
         }
     }
 }
