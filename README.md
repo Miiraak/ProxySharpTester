@@ -2,7 +2,7 @@
 <p align="center">
   Windows forms application to test ProxySharp ongoing developpement.
 <p align="center">
-  <img src="images/main.png" />
+  <img src="main.png" />
 </p>
 
 ---
